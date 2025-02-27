@@ -3,66 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trevor Gribble - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->
+    <title>Trevor's Sandbox</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
 </head>
 <body>
-
-    <!-- Navbar -->
     <header>
-        <nav id="navbar" class="navbar">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+        <h1>Welcome to Trevor's Sandbox!</h1>
+        <nav>
+            <ul id="tabs">
+                <li><a href="#react" class="tab">React SPA</a></li>
+                <li><a href="#vue" class="tab">Vue SPA</a></li>
+                <li><a href="#angular" class="tab">Angular SPA</a></li>
+            </ul>
         </nav>
-        <button id="menuToggle" class="menu-toggle">&#9776; Menu</button>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h2>Welcome to My Portfolio</h2>
-        <p>I'm Trevor Gribble - A Passionate Developer, Data Scientist, and AI Enthusiast</p>
-    </section>
-
-    <!-- About Section -->
-    <section class="about" id="about">
-        <h2>About Me</h2>
-        <p>With a diverse background in technology, AI, and cloud computing, I have had the privilege of working in both the tech industry and as an entrepreneur. My experience ranges from cloud architecture to data science and AI development. I'm passionate about building impactful, scalable solutions that make a difference.</p>
-    </section>
-
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>AI/ML</li>
-            <li>Cloud Architecture (AWS)</li>
-            <li>Data Science</li>
-            <li>Web Development</li>
-            <li>Docker & Kubernetes</li>
-            <li>Git & GitHub</li>
-        </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Your Name" required>
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Trevor Gribble | All Rights Reserved</p>
-    </footer>
-
-    <script src="js/script.js"></script> <!-- Link to external JS -->
+    <div id="content">
+        <div id="react" class="spa-content hidden">
+            <h2>React SPA</h2>
+            <p>Welcome to the React SPA. Here we will load the React app.</p>
+            <!-- React App will be inserted here -->
+        </div>
+        <div id="vue" class="spa-content hidden">
+            <h2>Vue SPA</h2>
+            <p>Welcome to the Vue SPA. Here we will load the Vue app.</p>
+            <!-- Vue App will be inserted here -->
+        </div>
+        <div id="angular" class="spa-content hidden">
+            <h2>Angular SPA</h2>
+            <p>Welcome to the Angular SPA. Here we will load the Angular app.</p>
+            <!-- Angular App will be inserted here -->
+        </div>
+    </div>
 </body>
 </html>
-
